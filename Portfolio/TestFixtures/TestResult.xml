@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\Philip\documents\visual studio 2010\Projects\Portfolio\TestFixtures\TestFixtures.csproj" total="3" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2013-11-11" time="10:52:33">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.6407" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Users\Philip\documents\visual studio 2010\Projects\Portfolio\TestFixtures" machine-name="PHILIP-PC" user="Philip" user-domain="Philip-PC" />
+  <culture-info current-culture="en-GB" current-uiculture="en-GB" />
+  <test-suite type="Project" name="C:\Users\Philip\documents\visual studio 2010\Projects\Portfolio\TestFixtures\TestFixtures.csproj" executed="True" result="Success" success="True" time="0.038" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="C:\Users\Philip\documents\visual studio 2010\Projects\Portfolio\TestFixtures\bin\Debug\TestFixtures.dll" executed="True" result="Success" success="True" time="0.031" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="PetriDishWin" executed="True" result="Success" success="True" time="0.031" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="StatsManagerFixture" executed="True" result="Success" success="True" time="0.030" asserts="0">
+                <results>
+                  <test-case name="PetriDishWin.StatsManagerFixture.Finds_id_and_count_of_the_most_common_microbe_in_a_given_grid" executed="True" result="Success" success="True" time="0.018" asserts="2" />
+                  <test-case name="PetriDishWin.StatsManagerFixture.test2" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                  <test-case name="PetriDishWin.StatsManagerFixture.test3" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
