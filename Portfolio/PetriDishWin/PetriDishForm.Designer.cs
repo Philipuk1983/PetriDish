@@ -37,7 +37,13 @@
             this.consumeStrengthLabel = new System.Windows.Forms.Label();
             this.ConsumeResistance = new System.Windows.Forms.Label();
             this.consumeResistanceLabel = new System.Windows.Forms.Label();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.trackBar2 = new System.Windows.Forms.TrackBar();
+            this.mutationFactor = new System.Windows.Forms.Label();
+            this.evolutionFactor = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.petriDishImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
             this.SuspendLayout();
             // 
             // petriDishImage
@@ -52,7 +58,7 @@
             // 
             this.startButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.startButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startButton.Location = new System.Drawing.Point(401, 285);
+            this.startButton.Location = new System.Drawing.Point(429, 302);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(75, 31);
             this.startButton.TabIndex = 1;
@@ -218,11 +224,57 @@
             this.consumeResistanceLabel.Text = "Consume Resistance";
             this.consumeResistanceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(447, 200);
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(139, 45);
+            this.trackBar1.TabIndex = 15;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            this.trackBar1.Minimum = 1;
+            this.trackBar1.Maximum = 20;
+            this.trackBar1.Value = 1;
+            this.trackBar1.TickFrequency = 20;
+            // 
+            // trackBar2
+            // 
+            this.trackBar2.Location = new System.Drawing.Point(447, 251);
+            this.trackBar2.Name = "trackBar2";
+            this.trackBar2.Size = new System.Drawing.Size(139, 45);
+            this.trackBar2.TabIndex = 16;
+            this.trackBar2.Scroll += new System.EventHandler(this.trackBar2_Scroll);
+            this.trackBar2.Minimum = 1;
+            this.trackBar2.Maximum = 20;
+            this.trackBar2.Value = 1;
+            this.trackBar2.TickFrequency = 20;
+            // 
+            // mutationFactor
+            // 
+            this.mutationFactor.AutoSize = true;
+            this.mutationFactor.Location = new System.Drawing.Point(349, 200);
+            this.mutationFactor.Name = "mutationFactor";
+            this.mutationFactor.Size = new System.Drawing.Size(81, 13);
+            this.mutationFactor.TabIndex = 17;
+            this.mutationFactor.Text = "Mutation Factor";
+            // 
+            // evolutionFactor
+            // 
+            this.evolutionFactor.AutoSize = true;
+            this.evolutionFactor.Location = new System.Drawing.Point(349, 251);
+            this.evolutionFactor.Name = "evolutionFactor";
+            this.evolutionFactor.Size = new System.Drawing.Size(84, 13);
+            this.evolutionFactor.TabIndex = 18;
+            this.evolutionFactor.Text = "Evolution Factor";
+            // 
             // PetriDishForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(592, 328);
+            this.ClientSize = new System.Drawing.Size(609, 345);
+            this.Controls.Add(this.evolutionFactor);
+            this.Controls.Add(this.mutationFactor);
+            this.Controls.Add(this.trackBar2);
+            this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.consumeResistanceLabel);
             this.Controls.Add(this.ConsumeResistance);
             this.Controls.Add(this.consumeStrengthLabel);
@@ -243,6 +295,8 @@
             this.Name = "PetriDishForm";
             this.Text = "PetriDishWin";
             ((System.ComponentModel.ISupportInitialize)(this.petriDishImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -267,5 +321,9 @@
         private System.Windows.Forms.Label consumeStrengthLabel;
         private System.Windows.Forms.Label ConsumeResistance;
         private System.Windows.Forms.Label consumeResistanceLabel;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar trackBar2;
+        private System.Windows.Forms.Label mutationFactor;
+        private System.Windows.Forms.Label evolutionFactor;
     }
 }

@@ -14,6 +14,8 @@ namespace PetriDishWin
         public int consumeResistance { get; private set; }
         public int consumeStrength { get; private set; }
         public int spreadChance { get; private set; }
+        public static int mutationFactor = 1;
+        public static int evolutionFactor = 1;
         public Color rgbColour { get; private set; }
         private static Random rand = new Random();
 
@@ -54,7 +56,7 @@ namespace PetriDishWin
             var mutateResult = RandomNumber(0,50*mutateResistance); 
             if (mutateResult == 0)
             {
-                Mutate(1);
+                Mutate(1*mutationFactor);
                 return true;
             }
             return false;
@@ -71,7 +73,7 @@ namespace PetriDishWin
         }
         public bool CheckForNewSpecies()
         {
-            if (mutateStrength > RandomNumber(0,10000000))
+            if (mutateStrength*evolutionFactor > RandomNumber(0,10000000))
             {
                 return true;
             }

@@ -119,5 +119,15 @@ namespace PetriDishWin
             ConsumeStrength.Text = stats.topDog.consumeStrength.ToString();
             ConsumeResistance.Text = stats.topDog.consumeResistance.ToString();
         }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            Microbe.mutationFactor = trackBar1.Value;
+        }
+
+        private void trackBar2_Scroll(object sender, EventArgs e)
+        {
+            Microbe.evolutionFactor = trackBar2.Value;
+        }
     }
 }
